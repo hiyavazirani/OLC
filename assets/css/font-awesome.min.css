@@ -1,12 +1,12 @@
 @font-face {
 
-font-family:'MLfont';
-src: url("../fonts/NHaasGroteskDSPro-55Rg.otf") format("opentype");
+font-family: MLfont;
+src: url(../fonts/NHaasGroteskDSPro-55Rg.otf);
 
 }
 
 @font-face {
-    font-family: myFirstFont;
-    src: url();
+    font-family: MLfont;
+    src: url(../fonts/NHaasGroteskTXStd-75Bd/otf);
     font-weight: bold;
 }

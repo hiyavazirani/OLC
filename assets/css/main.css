@@ -14,7 +14,7 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font-family: MLfont;
+		font: inherit;
 		vertical-align: baseline;
 	}
 
@@ -54,6 +54,7 @@
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
+
 	}
 
 /* Grid */
@@ -4658,6 +4659,7 @@
 		position: relative;
 		overflow-x: hidden;
 		text-align: left;
+		background-color: #ffffff;
 	}
 
 		.spotlight.style1 .content {
@@ -4691,6 +4693,7 @@
 			width: 35%;
 			min-width: 25rem;
 			border-radius: 0;
+			background-color: #ffffff;
 		}
 
 			.spotlight.style1 .image img {
@@ -4709,6 +4712,7 @@
 				width: 100%;
 				height: 100%;
 				border-radius: 0;
+				background-color: #ffffff;
 			}
 
 		@media screen and (max-width: 1680px) {

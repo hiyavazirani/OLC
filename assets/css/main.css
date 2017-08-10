@@ -17,6 +17,129 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
+	
+	.faculty {
+	border-radius: 0.5rem;
+	}
+
+/*menu button*/
+.menu-btn {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-size: 2.5em;
+  color: #2f4f4f;
+  opacity:1;
+  z-index: 999;
+  transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+  font-size:2.75em;
+  cursor: pointer;
+}
+/*cross button*/
+.cross-btn{
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  font-size: 2.75em;
+  color: #ffffff;
+  opacity:0;
+  z-index: 899;
+  transition: all 0.2s ease;
+}
+
+.menu-panel {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba( 51,51, 51,0.8);
+  z-index: 799;
+  opacity:0;
+  transition: all 0.2s ease;
+}
+
+.menulist {
+  display: block;  
+  margin: 0 0 0 0; 
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  /*put ul at the center*/
+  position: absolute;
+  width: 50%;/*not really matter*/
+  height: 100%;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
+}
+
+/* li contains p, provide fixed height for each item, prevent fluctuating padding add/disable animation*/
+
+
+
+.navlist {
+  height:18%;
+}
+
+.nav-item {
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  padding-bottom: 50%;
+}
+link style*/
+
+a:link {
+  color: #3ABFC4;/*teal*/
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:visited {
+  color: #3ABFC4;/*teal*/
+}
+
+a:hover {
+  color: #fafaf9;/*pale yello*/
+  font-size: 1.05em;
+}
+
+.disBtn{
+  opacity:0;
+}
+.enCross{
+  opacity:1;
+}
+.showPanel{
+  opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -1682,7 +1805,7 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
 		font-size: 1rem;
 		font-weight: 300;
 		line-height: 1.65;

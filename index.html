@@ -14,33 +14,78 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	
-	
+
+			
+
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="assets/js/navbar.js"></script>
 
 
-	<body>
 
-		<!-- Wrapper -->
-			<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+
+<script 
+$(".menu-btn").click(
+  function() {
+    $(".menu-btn").toggleClass("disBtn");
+    
+    $(".cross-btn").toggleClass("enCross");
+    
+    $('.menu-panel').toggleClass('showPanel');
+  }
+);
+></script>
+
+
+<body>
+<!--https://codepen.io/dueytam/pen/rOgPzj-->
+  <section class="section">
+    <div class="menu-btn">
+      <span class="lnr lnr-menu"></span>
+    </div>
+    <div class="cross-btn">
+      <span class="lnr lnr-cross"></span>
+    </div>
+    <div class="menu-panel">
+      <ul class= "menulist">
+        <li class="navlist"><a href="#about"><p class="nav-item">About</p></a></li>
+        <li class="navlist"><a href="#curriculum"><p class="nav-item">Curriculum</p></a></li>
+        <li class="navlist"><a href="#cohorts"><p class="nav-item">Cohorts</p></a></li>
+        <li class="navlist"><a href="#nominate"><p class="nav-item">Nominate</p></a></li>
+      </ul>
+    </div>
+</section>
+
+
+
+
+
+
+
+<div id="wrapper" class="divided">
+
+
+
+
 
 				<!-- Banner -->
-					<section class="banner style2 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section id="about" class="banner style5 orient-left content-align-center image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1> <img src="images/png-format-olc.png" alt="" height="185" width="318"/></h1>
-				
+				<!--
 							<ul class="actions vertical">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Learn More</a></li>
-							</ul>
+							</ul> -->
 						</div>
 						<div class="image">
 							<img src="images/banner.jpg" alt="" />
 						</div>
 					</section>
 					
-					<section class="wrapper style1 align-left">
+					<section id="s1" class="wrapper style1 align-left">
 						<div class="inner">
-							<h1>About us</h1>
+							<h2>About the Open Leadership Camp</h2>
 							
 							<h3>The Open Leadership Camp 
 							is a participatory learning opportunity for CEOs of nonprofit 
@@ -50,8 +95,7 @@
 							Our goal is to apply the principles of open source, open innovation,
 							 and the decentralized nature of the web to reimagine the way some of
 							  our most crucial social sector organizations work. 
-							  </h4>
-							  <h4>
+							  
 							  We believe that new types of alliances between technology 
 							  innovators and public interest organizations are needed to
 							   tackle some of our hardest problems. 
@@ -59,11 +103,18 @@
 
 						</div>
 
+<section>
+<div>
+
+<iframe width="420" height="345" src="http://www.youtube.com/embed/XGSy3_Czz8k?controls=0">
+</iframe>
+</div>
+</section>
 					</section>
 					<!-- Five -->
 					<section class="wrapper style2 align-center">
 						<div class="inner" >
-							<h2>Open Leadership</h2>
+							<h1>Open Leadership</h1>
 							<h3>What do we mean by <b>open leadership</b> and <b>working open</b>?<br>
 							
 							<!--We’re interested in how the key elements of working open
@@ -125,7 +176,7 @@
 
 			
 			<!-- CURRICULUM-->
-					<section class="wrapper style2 align-center">
+					<section id="curriculum" class="wrapper style2 align-center section s3">
 						<div class="inner" >
 							<h1>Curriculum</h1>
 							<h4>We organized the first Open Leadership Camp curriculum 
@@ -205,23 +256,27 @@
 							<h2>Meet our Faculty from the Spring Camp</h2>
 							<div class="items style1 small onscroll-fade-in">
 								<section>
-									<span class="icon style1 major fa-diamond"></span>
+									
+									<img src="images/faculty/joi.jpg" class="faculty" alt="" width="100" height="100"/>
 									<h3>Joi Ito</h3>
 									<p>Director, MIT Media Lab</p>
 								</section>
 								<section>
-									<span class="icon style1 major fa-save"></span>
+									
+									<img src="images/faculty/mitchell.jpg" class="faculty" class="faculty"alt="" width="100" height="100"/>
 									<h3>Mitchell Baker</h3>
-									<p>Executive Chair,Mozilla Foundation and Corporation</p>
+									<p>Executive Chair, Mozilla Foundation and Corporation</p>
 								</section>
 								<section>
-									<span class="icon style1 major fa-bar-chart"></span>
+									
+									<img src="images/faculty/sergio.jpg" class="faculty" class="faculty"alt="" width="100" height="100"/>
 									<h3>Sérgio Branco</h3>
 									<p>Director, the Institute for Technology and Society
 									of Rio De Janeiro</p>
 								</section>
 								<section>
-									<span class="icon style1 major fa-wifi"></span>
+									
+									<img src="images/faculty/david.jpg" class="faculty" class="faculty"alt="" width="100" height="100"/>
 									<h3>David Eaves</h3>
 									<p>Lecturer in Public
 										Policy, the
@@ -229,7 +284,8 @@
 										of Government</p>
 								</section>
 								<section>
-									<span class="icon style1 major fa-wifi"></span>
+									
+									<img src="images/faculty/karim.png" class="faculty" alt="" width="100" height="100"/>
 									<h3>Karim Lakhani</h3>
 									<p>Professor of
 Business
@@ -238,7 +294,8 @@ the Harvard
 Business School</p>
 								</section>
 								<section>
-									<span class="icon style1 major fa-wifi"></span>
+								
+									<img src="images/faculty/aaron.jpg" alt="" class="faculty" width="100" height="100"/>
 									<h3>Aaron Ogle</h3>
 									<p>Director of
 Product,
@@ -246,7 +303,8 @@ OpenGov
 Foundation</p>
 								</section>
 								<section>
-									<span class="icon style1 major fa-wifi"></span>
+									
+									<img src="images/faculty/javier.jpg" class="faculty" alt="" width="100" height="100"/>
 									<h3>Javier Prieto</h3>
 									<p>COO, the Dalai
 Lama Center for
@@ -255,7 +313,8 @@ Transformative
 Values</p>
 								</section>
 								<section>
-									<span class="icon style1 major fa-wifi"></span>
+									
+									<img src="images/faculty/tenzin.jpg" class="faculty" alt="" width="100" height="100"/>
 									<h3>Tenzin Priyadarshi</h3>
 									<p>President & CEO,
 the Dalai Lama
@@ -264,7 +323,8 @@ and Transformative
 Values</p>
 								</section>
 								<section>
-									<span class="icon style1 major fa-wifi"></span>
+									
+									<img src="images/faculty/philipp.jpg" class="faculty" alt="" width="100" height="100"/>
 									<h3>J. Philipp Schmidt</h3>
 									<p>Director of
 Learning
@@ -272,14 +332,16 @@ Innovation, MIT
 Media Lab</p>
 								</section>
 								<section>
-									<span class="icon style1 major fa-wifi"></span>
+									
+									<img src="images/faculty/mark.png" class="faculty" alt="" width="100" height="100"/>
 									<h3>Mark Surman</h3>
 									<p>Executive
 Director, Mozilla
 Foundation</p>
 								</section>
 								<section>
-									<span class="icon style1 major fa-wifi"></span>
+									
+									<img src="images/faculty/helen.jpg" class="faculty" alt="" width="100" height="100"/>
 									<h3>Helen Turvey</h3>
 									<p>Executive
 Director,
@@ -301,13 +363,7 @@ Foundation</p>
 							 CEO-level executives of large organizations who have a mandate
 							  for strategic change, and who provide leadership not only
 							   to their organizations but also to the fields in which they work.
-							   </p>
-							   <p>
-							    We did not focus on a particular sector 
-							    but invited people from a wide range of non-profit organizations, 
-							    such as the New York Hall of Science, Playworks, and WGBH, and leaders 
-							    from the public sector, including the Chicago Public Library. 
-							    <p>
+							   
 							    We used two criteria—an annual budget of $10 million-plus 
 							    and a team of 100 or more people—to filter nominees, 
 							    and we paid special attention to diversity. 
@@ -315,145 +371,171 @@ Foundation</p>
 						</div>
 					
 					</section>
-					
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Our Cohorts from the first Open Leadership Camp</h2>
+							</div>
+					</section>
 					
 					<section class="banner style2 orient-center content-align-center image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
 						
 						<div class="image">
-							<img src="images/cohorts.jpg" alt="OLC Books" />
+						<figure>
+  						<img src="images/cohorts.jpg"" alt="OLC cohorts" >
+  						<p>Our cohorts from the first Open Leadership Camp.</p>
+						</figure>
+							
 						</div>
 					</section>
 						
 						
-						<!--<div class="image">
-							<img src="images/cohorts.jpg" alt="cohorts-image" height="716" width="1136"/>
-						</div>-->
-						
+			
 					
 
 
 				
 
-</section>
+
 <!-- Grid Cohorts -->
 					<section class="wrapper style1 align-center">
 						<div class="inner">
-							<h2>Our Cohorts from the Spring Camp</h2>
+							<h2></h2>
 							<div class="items style1 small onscroll-fade-in">
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
+									<h3>Aaron Mahler</h3>
+									<p>CTO, Sweet Briar College</p>
+								</section>
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Amy Sovereign</h3>
+									<p>Program Management Officer, City of Detroit</p>
+								</section>
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Andrés Henríquez</h3>
+									<p>Program Management Officer, NYSCI</p>
+								</section>
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Benjamin Sweezy </h3>
+									<p>Deputy Director, Office of Digital Information Strategy (ODIS),
+									IMLS</p>
+								</section>
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Beth Niblock</h3>
+									<p>CIO, City of Detroit</p>
+								</section>
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Bob Kempf</h3>
+									<p>VP Digital Services, WGBH</p>
+								</section>
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Brian Bannon</h3>
+									<p>Commissioner, Chicago Public Library</p>
+								</section>
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Director of Technology for GovNext, MassIT</h3>
 									<p></p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Evie Kintzer</h3>
+									<p>Executive Director, Strategy and Business Development, WGBH</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Holly St Clair</h3>
+									<p>Chief Digital Officer, MassIT</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Ismael Palacin</h3>
+									<p>CEO, Fondacion Bofill </p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Jeremy Dunn</h3>
+									<p>Director Teen Services, Chicago Public Library</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Jes Constantine </h3>
+									<p>Developer, Mass IT</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Jill Vialet</h3>
+									<p>CEO & Founder, Playworks</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Jon Abbott</h3>
+									<p>President/CEO, WGBH</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Jon Gay</h3>
+									<p>CEO New England, Playworks New England</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Kris Hermanns</h3>
+									<p>CEO, Pride Foundation</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Liam McCormack</h3>
+									<p>Vice President, Research, Testing & Insights, Consumer Reports</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Margaret Honey</h3>
+									<p>President, NYSCI</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Marta Tellado</h3>
+									<p>CEO, Consumer Reports</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Mary Ellen Sullivan</h3>
+									<p>Director of Industry Partnerships, CSNYC</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Maura Marx</h3>
+									<p>Dept Director, IMLS</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Maya Wiley</h3>
+									<p>Senior Vice President for Social Justice, Henry Cohen Professor of Urban Policy and Management, New School</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Meredith Woo</h3>
+									<p>President, Sweet Briar College</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Michael Preston</h3>
+									<p>CEO, CSNYC</p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Mònica Nadal</h3>
+									<p>Director of Research, Fondacion Bofill </p>
 								</section>
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3></h3>
-									<p></p>
+									<h3>Rhea Wong</h3>
+									<p>CEO, Breakthrough New York</p>
 								</section>
 								</div>
 						</div>
@@ -462,34 +544,13 @@ Foundation</p>
 
 
 <!-- Quotes -->
-					<section class="spotlight style2 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							
-							<blockquote>For me, it was just a moment that had a real 
-							staying power and an important affirmation because 
-							it's easy to lose sight of core values, core purpose, 
-							in a kind of daily-ness of our work. Effective leadership 
-							is anchored in the values that are often most personal and 
-							most intimate to us. All of us who lead organizations, of course,
-							 are caught up in daily grind of what we do. 
-							 There is often not enough time [...] to step back and reflect.
-							 <br> 
-							 </blockquote>
-							-- Margaret Honey, President NY Hall of Science --
-</p>
-						<!--	<ul class="actions vertical">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul> -->
-						</div>
-						<div class="image">
-							<img src="images/margaret-honey.jpg" alt="" />
-						</div>
-					</section>
+				
 
 				<!-- Three -->
 					<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
-							<h2>Jill Vialet, CEO Playworks</h2>
+							<h2>Jill Vialet</h2> 
+							<h3>CEO, Playworks</h3>
 							<blockquote> The people that were at the camp were great.
 							 It was particularly engaging because we came
 							  from such a range and diversity of backgrounds.
@@ -500,10 +561,7 @@ Foundation</p>
 							    [That]  helped me think about how to apply this idea about open 
 							    and it really changed how we are going to do some stuff around here."
 							    </blockquote>
-							    <p>
-								-- Jill Vialet, CEO Playworks --
-
-							</p>
+							    
 							<!--<ul class="actions vertical">
 								<li><a href="#" class="button">Learn More</a></li>
 							</ul> -->
@@ -526,8 +584,7 @@ Foundation</p>
 							 age needs to look much different from what we did it 10, 20, 50, or 100 years ago.
 							  The opportunity for us was really to use the open leadership camp to work on
 							   an open project to unpack how the library can look different today. </blockquote>
-						<p>-- Brian Bannon, Commissioner, Chicago Public Library --
-							</p>
+						
 							<!--<ul class="actions vertical">
 								<li><a href="#" class="button">Learn More</a></li> 
 							</ul> -->
@@ -537,17 +594,33 @@ Foundation</p>
 						</div>
 					</section>
 
-
+<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in" >
+						<div class="content">
+							<h2>Margaret Honey</h2> 
+							<h3>President, NY Hall of Science</h3>
+							<blockquote>For me, it was just a moment that had a real 
+							staying power and an important affirmation because 
+							it's easy to lose sight of core values, core purpose, 
+							in a kind of daily-ness of our work. Effective leadership 
+							is anchored in the values that are often most personal and 
+							most intimate to us. All of us who lead organizations, of course,
+							 are caught up in daily grind of what we do. 
+							 There is often not enough time [...] to step back and reflect.
+							 <br> 
+							 </blockquote>
+							
+					
+						</div>
+						<div class="image">
+							<img src="images/margaret-honey.jpg" alt="" />
+						</div>
+					</section>
 
 <!-- Five -->
 					<section class="wrapper style1 align-center">
 						<div class="inner">
-							<h2>What's next?</h2>
-							<p>Our inaugural camp showed that there was strong interest from the kinds of 
-							leaders we’re hoping to reach, and that they took away something useful from 
-							this kind of shared learning experience. We also had a lot of fun organizing and running it.
-							 That’s why we’ve decided to organize a second Open Leadership Camp at the 
-							 Media Lab in the fall this year and are tentatively planning a third camp for spring 2018.</p>
+							<h2>Library Books</h2>
+							<p></p>
 						</div>
 
 
@@ -559,45 +632,24 @@ Foundation</p>
 
 						<!-- Gallery -->
 							<div class="gallery style2 medium lightbox onscroll-fade-in">
+								
+								
 								<article>
-									<a href="images/gallery/fulls/01.jpg" class="image">
-										<img src="images/gallery/thumbs/01.jpg" alt="" />
+									<a href="images/books/cathedral.jpg" class="image">
+										<img src="images/books/cathedral.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Ipsum Dolor</h3>
+										<h3>cathedral</h3>
 										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
 										<ul class="actions">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
+								
 								<article>
-									<a href="images/gallery/fulls/02.jpg" class="image">
-										<img src="images/gallery/thumbs/02.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Feugiat Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/03.jpg" class="image">
-										<img src="images/gallery/thumbs/03.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Amet</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/04.jpg" class="image">
-										<img src="images/gallery/thumbs/04.jpg" alt="" />
+									<a href="images/books/hacker.jpg" class="image">
+										<img src="images/books/hacker.jpg" alt="" />
 									</a>
 									<div class="caption">
 										<h3>Sed Tempus</h3>
@@ -607,9 +659,10 @@ Foundation</p>
 										</ul>
 									</div>
 								</article>
+								
 								<article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="images/gallery/thumbs/05.jpg" alt="" />
+									<a href="images/books/success.jpg" class="image">
+										<img src="images/books/success.jpg" alt="" />
 									</a>
 									<div class="caption">
 										<h3>Ultrices Magna</h3>
@@ -619,9 +672,10 @@ Foundation</p>
 										</ul>
 									</div>
 								</article>
+								
 								<article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="images/gallery/thumbs/06.jpg" alt="" />
+									<a href="images/books/wealth.jpg" class="image">
+										<img src="images/books/wealth.jpg" alt="" />
 									</a>
 									<div class="caption">
 										<h3>Sed Tempus</h3>
@@ -631,9 +685,10 @@ Foundation</p>
 										</ul>
 									</div>
 								</article>
+								
 								<article>
-									<a href="images/gallery/fulls/07.jpg" class="image">
-										<img src="images/gallery/thumbs/07.jpg" alt="" />
+									<a href="images/books/reinventing.jpg" class="image">
+										<img src="images/books/reinventing.jpg" alt="" />
 									</a>
 									<div class="caption">
 										<h3>Ipsum Lorem</h3>
@@ -643,9 +698,10 @@ Foundation</p>
 										</ul>
 									</div>
 								</article>
+								
 								<article>
-									<a href="images/gallery/fulls/08.jpg" class="image">
-										<img src="images/gallery/thumbs/08.jpg" alt="" />
+									<a href="images/books/ethic.jpg" class="image">
+										<img src="images/books/ethic.jpg" alt="" />
 									</a>
 									<div class="caption">
 										<h3>Magna Risus</h3>
@@ -655,9 +711,10 @@ Foundation</p>
 										</ul>
 									</div>
 								</article>
+								
 								<article>
-									<a href="images/gallery/fulls/09.jpg" class="image">
-										<img src="images/gallery/thumbs/09.jpg" alt="" />
+									<a href="images/books/power.jpg" class="image">
+										<img src="images/books/power.jpg" alt="" />
 									</a>
 									<div class="caption">
 										<h3>Tempus Dolor</h3>
@@ -667,50 +724,22 @@ Foundation</p>
 										</ul>
 									</div>
 								</article>
-								<article>
-									<a href="images/gallery/fulls/10.jpg" class="image">
-										<img src="images/gallery/thumbs/10.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Etiam</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/11.jpg" class="image">
-										<img src="images/gallery/thumbs/11.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/fulls/12.jpg" class="image">
-										<img src="images/gallery/thumbs/12.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-							</div>
-
+								
+								
 					</section>
 					
-			
+			<section class="wrapper style2 align-center">
+						<div class="inner">
+							<h2>What's next?</h2>
+							<p>Our inaugural camp showed that there was strong interest from the kinds of 
+							leaders we’re hoping to reach, and that they took away something useful from 
+							this kind of shared learning experience. We also had a lot of fun organizing and running it.
+							 That’s why we’ve decided to organize a second Open Leadership Camp at the 
+							 Media Lab in the fall this year and are tentatively planning a third camp for spring 2018.</p>
+						</div>
 
 			
-					
+					</section>
 
 				<!-- Seven -->
 					<section class="wrapper style1 align-center">
@@ -755,6 +784,7 @@ Foundation</p>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/navbar.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

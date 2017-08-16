@@ -20,11 +20,10 @@
 <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="assets/js/navbar.js"></script>
 
 
 
-
+<!--
 <script 
 $(".menu-btn").click(
   function() {
@@ -33,14 +32,43 @@ $(".menu-btn").click(
     $(".cross-btn").toggleClass("enCross");
     
     $('.menu-panel').toggleClass('showPanel');
+    
+    
   }
 );
 ></script>
 
+$(".menu-btn").click(
+  function() {
+  $(".menu-btn").show();
+ $(".menu-panel").show();
+.menu-panel
+
+
+<script>
+$(".menu-btn").click( function() {
+
+$(".menu-btn").toggleClass("disBtn");
+
+$(".menu-panel").css("display","block");
+        
+$(".cross-btn").toggleClass("enCross");
+
+$(".menu-panel").css("display","none");
+
+    });    
+    
+</script>
+-->
+
+
+
+
+
 
 <body>
 <!--https://codepen.io/dueytam/pen/rOgPzj-->
-  <section class="section">
+  <section>
     <div class="menu-btn">
       <span class="lnr lnr-menu"></span>
     </div>
@@ -57,7 +85,23 @@ $(".menu-btn").click(
     </div>
 </section>
 
-
+<script>
+$(function() {
+     $(".menu-btn").click(function() {
+     		$(".menu-panel").show();
+     		$(".menu-btn").hide();
+     		$(".cross-btn").show();    
+        });
+		
+		
+		$(".cross-btn").click(function() {
+		 	console.log('hello!');
+     		$(".menu-panel").hide();
+     		$(".menu-btn").show();
+     		$(".cross-btn").hide();   
+        });
+    });
+</script>
 
 
 
@@ -103,14 +147,14 @@ $(".menu-btn").click(
 
 						</div>
 
-<section>
-<div>
+
+
 
 <iframe width="420" height="345" src="http://www.youtube.com/embed/XGSy3_Czz8k?controls=0">
 </iframe>
-</div>
+
 </section>
-					</section>
+					
 					<!-- Five -->
 					<section class="wrapper style2 align-center">
 						<div class="inner" >
@@ -171,6 +215,80 @@ $(".menu-btn").click(
 						</div>
 						<div class="image">
 							<img src="images/collaborate-icon.jpg" alt="" />
+						</div>
+					</section>
+					
+					
+			<!-- Quotes -->
+				
+
+				<!-- Three -->
+					<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Jill Vialet</h2> 
+							<h3>CEO, Playworks</h3>
+							<blockquote> The people that were at the camp were great.
+							 It was particularly engaging because we came
+							  from such a range and diversity of backgrounds.
+							   I think I often find myself in rooms with other people looking at 
+							   education and there were education folks but also a wide range of 
+							   interests, approaches, and diversity of thought and of backgrounds:
+							    libraries, cities, a PBS station. 
+							    [That]  helped me think about how to apply this idea about open 
+							    and it really changed how we are going to do some stuff around here."
+							    </blockquote>
+							    
+							<!--<ul class="actions vertical">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul> -->
+						</div>
+						<div class="image">
+							<img src="images/jill-vialet.jpg" alt="" />
+						</div>
+					</section>
+
+
+<!-- Four -->
+					<section class="spotlight style2 orient-left content-align-left image-position-center onscroll-image-fade-in" >
+						<div class="content">
+							<h2> Brian Bannon</h2> 
+							 <h3>Commissioner, Chicago Public Library</h3>
+							<blockquote>Chicago Public Library is one of the largest urban public 
+							libraries in the United States. Our mission has remained unchanged -- 
+							showing and connecting people to the world's ideas and knowledge to create 
+							a strong and vibrant Chicago -- but the way that we do it today in the information
+							 age needs to look much different from what we did it 10, 20, 50, or 100 years ago.
+							  The opportunity for us was really to use the open leadership camp to work on
+							   an open project to unpack how the library can look different today. </blockquote>
+						
+							<!--<ul class="actions vertical">
+								<li><a href="#" class="button">Learn More</a></li> 
+							</ul> -->
+						</div>
+						<div class="image">
+							<img src="images/brian-bannon.jpg" alt="" />
+						</div>
+					</section>
+
+<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in" >
+						<div class="content">
+							<h2>Margaret Honey</h2> 
+							<h3>President, NY Hall of Science</h3>
+							<blockquote>For me, it was just a moment that had a real 
+							staying power and an important affirmation because 
+							it's easy to lose sight of core values, core purpose, 
+							in a kind of daily-ness of our work. Effective leadership 
+							is anchored in the values that are often most personal and 
+							most intimate to us. All of us who lead organizations, of course,
+							 are caught up in daily grind of what we do. 
+							 There is often not enough time [...] to step back and reflect.
+							 <br> 
+							 </blockquote>
+							
+					
+						</div>
+						<div class="image">
+							<img src="images/margaret-honey.jpg" alt="" />
 						</div>
 					</section>
 
@@ -401,137 +519,203 @@ Foundation</p>
 						<div class="inner">
 							<h2></h2>
 							<div class="items style1 small onscroll-fade-in">
-								<section>
+							<!--CITY of DETROIT-->
+							<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3>Aaron Mahler</h3>
-									<p>CTO, Sweet Briar College</p>
+									<h3>Beth Niblock</h3>
+									<p>CIO, City of Detroit</p>
 								</section>
+								
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
 									<h3>Amy Sovereign</h3>
 									<p>Program Management Officer, City of Detroit</p>
 								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Andrés Henríquez</h3>
-									<p>Program Management Officer, NYSCI</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Benjamin Sweezy </h3>
-									<p>Deputy Director, Office of Digital Information Strategy (ODIS),
-									IMLS</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Beth Niblock</h3>
-									<p>CIO, City of Detroit</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Bob Kempf</h3>
-									<p>VP Digital Services, WGBH</p>
-								</section>
+								
+								<!--CPL-->
+								
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
 									<h3>Brian Bannon</h3>
 									<p>Commissioner, Chicago Public Library</p>
 								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Director of Technology for GovNext, MassIT</h3>
-									<p></p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Evie Kintzer</h3>
-									<p>Executive Director, Strategy and Business Development, WGBH</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Holly St Clair</h3>
-									<p>Chief Digital Officer, MassIT</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Ismael Palacin</h3>
-									<p>CEO, Fondacion Bofill </p>
-								</section>
+								
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
 									<h3>Jeremy Dunn</h3>
 									<p>Director Teen Services, Chicago Public Library</p>
 								</section>
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Holly St Clair</h3>
+									<p>Chief Digital Officer, MassIT</p>
+								</section>
+								
+								
+								
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
 									<h3>Jes Constantine </h3>
 									<p>Developer, Mass IT</p>
 								</section>
+								
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3>Jill Vialet</h3>
-									<p>CEO & Founder, Playworks</p>
+									
+									<h3>Bryan Hirsch</h3>
+									<p>Director of Technology for GovNext, MassIT</p>
+									<p></p>
 								</section>
+								
+								
+								
+								
+								<!--Bofill-->
+								
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
-									<h3>Jon Abbott</h3>
-									<p>President/CEO, WGBH</p>
+									<h3>Ismael Palacin</h3>
+									<p>CEO, Fondacion Bofill </p>
 								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Jon Gay</h3>
-									<p>CEO New England, Playworks New England</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Kris Hermanns</h3>
-									<p>CEO, Pride Foundation</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Liam McCormack</h3>
-									<p>Vice President, Research, Testing & Insights, Consumer Reports</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Margaret Honey</h3>
-									<p>President, NYSCI</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Marta Tellado</h3>
-									<p>CEO, Consumer Reports</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Mary Ellen Sullivan</h3>
-									<p>Director of Industry Partnerships, CSNYC</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Maura Marx</h3>
-									<p>Dept Director, IMLS</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Maya Wiley</h3>
-									<p>Senior Vice President for Social Justice, Henry Cohen Professor of Urban Policy and Management, New School</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Meredith Woo</h3>
-									<p>President, Sweet Briar College</p>
-								</section>
-								<section>
-									<span class="icon style1 major fa-diamond"></span>
-									<h3>Michael Preston</h3>
-									<p>CEO, CSNYC</p>
-								</section>
+								
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
 									<h3>Mònica Nadal</h3>
 									<p>Director of Research, Fondacion Bofill </p>
 								</section>
+								
+								<!--Playworks-->
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Jill Vialet</h3>
+									<p>CEO & Founder, Playworks</p>
+								</section>
+								
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Jon Gay</h3>
+									<p>CEO New England, Playworks New England</p>
+								</section>
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Kris Hermanns</h3>
+									<p>CEO, Pride Foundation</p>
+								</section>
+								
+								
+								<!--WBGH-->
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Jon Abbott</h3>
+									<p>President/CEO, WGBH</p>
+								</section>
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Bob Kempf</h3>
+									<p>VP Digital Services, WGBH</p>
+								</section>
+								
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Evie Kintzer</h3>
+									<p>Executive Director, Strategy and Business Development, WGBH</p>
+								</section>
+								
+								
+								
+							
+								
+								
+								
+								
+								
+								
+								<!--NYSCI-->
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Margaret Honey</h3>
+									<p>President, NYSCI</p>
+								</section>
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Andrés Henríquez</h3>
+									<p>Program Management Officer, NYSCI</p>
+								</section>
+								
+								<!--consumer-->
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Marta Tellado</h3>
+									<p>CEO, Consumer Reports</p>
+								</section>
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Liam McCormack</h3>
+									<p>Vice President, Research, Testing & Insights, Consumer Reports</p>
+								</section>
+								
+								<!--IMLS-->
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Maura Marx</h3>
+									<p>Dept Director, IMLS</p>
+								</section>
+								
+								<section>
+								<span class="icon style1 major fa-diamond"></span>
+									<h3>Benjamin Sweezy </h3>
+									<p>Deputy Director, Office of Digital Information Strategy (ODIS),
+									IMLS</p>
+								</section>
+								
+								<!--new school-->
+								
+																<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Maya Wiley</h3>
+									<p>Senior Vice President for Social Justice, Henry Cohen Professor of Urban Policy and Management, New School</p>
+								</section>
+
+								<!--sweet briar-->
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Meredith Woo</h3>
+									<p>President, Sweet Briar College</p>
+								</section>
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Aaron Mahler</h3>
+									<p>CTO, Sweet Briar College</p>
+								</section>
+								
+								<!--csnyc-->
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Michael Preston</h3>
+									<p>CEO, CSNYC</p>
+								</section>
+								
+								<section>
+									<span class="icon style1 major fa-diamond"></span>
+									<h3>Mary Ellen Sullivan</h3>
+									<p>Director of Industry Partnerships, CSNYC</p>
+								</section>
+								
+								<!--break-->
 								<section>
 									<span class="icon style1 major fa-diamond"></span>
 									<h3>Rhea Wong</h3>
@@ -540,87 +724,31 @@ Foundation</p>
 								</div>
 						</div>
 					</section>
-
-
-
-<!-- Quotes -->
+								
 				
-
-				<!-- Three -->
-					<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Jill Vialet</h2> 
-							<h3>CEO, Playworks</h3>
-							<blockquote> The people that were at the camp were great.
-							 It was particularly engaging because we came
-							  from such a range and diversity of backgrounds.
-							   I think I often find myself in rooms with other people looking at 
-							   education and there were education folks but also a wide range of 
-							   interests, approaches, and diversity of thought and of backgrounds:
-							    libraries, cities, a PBS station. 
-							    [That]  helped me think about how to apply this idea about open 
-							    and it really changed how we are going to do some stuff around here."
-							    </blockquote>
-							    
-							<!--<ul class="actions vertical">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul> -->
-						</div>
-						<div class="image">
-							<img src="images/jill-vialet.jpg" alt="" />
-						</div>
-					</section>
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
 
 
-<!-- Four -->
-					<section class="spotlight style2 orient-left content-align-left image-position-center onscroll-image-fade-in" >
-						<div class="content">
-							<h2> Brian Bannon</h2> 
-							 <h3>Commissioner, Chicago Public Library</h3>
-							<blockquote>Chicago Public Library is one of the largest urban public 
-							libraries in the United States. Our mission has remained unchanged -- 
-							showing and connecting people to the world's ideas and knowledge to create 
-							a strong and vibrant Chicago -- but the way that we do it today in the information
-							 age needs to look much different from what we did it 10, 20, 50, or 100 years ago.
-							  The opportunity for us was really to use the open leadership camp to work on
-							   an open project to unpack how the library can look different today. </blockquote>
-						
-							<!--<ul class="actions vertical">
-								<li><a href="#" class="button">Learn More</a></li> 
-							</ul> -->
-						</div>
-						<div class="image">
-							<img src="images/brian-bannon.jpg" alt="" />
-						</div>
-					</section>
 
-<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in" >
-						<div class="content">
-							<h2>Margaret Honey</h2> 
-							<h3>President, NY Hall of Science</h3>
-							<blockquote>For me, it was just a moment that had a real 
-							staying power and an important affirmation because 
-							it's easy to lose sight of core values, core purpose, 
-							in a kind of daily-ness of our work. Effective leadership 
-							is anchored in the values that are often most personal and 
-							most intimate to us. All of us who lead organizations, of course,
-							 are caught up in daily grind of what we do. 
-							 There is often not enough time [...] to step back and reflect.
-							 <br> 
-							 </blockquote>
-							
-					
-						</div>
-						<div class="image">
-							<img src="images/margaret-honey.jpg" alt="" />
-						</div>
-					</section>
+
 
 <!-- Five -->
 					<section class="wrapper style1 align-center">
 						<div class="inner">
 							<h2>Library Books</h2>
-							<p></p>
+							<p>For the first camp. we asked all the participants to bring a
+							 book of their choice about open source. Here are some of them.</p>
 						</div>
 
 
@@ -784,7 +912,6 @@ Foundation</p>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/navbar.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

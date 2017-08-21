@@ -18,6 +18,15 @@
 		vertical-align: baseline;
 	}
 	
+	
+	
+	video {
+	 width: 100%    !important;
+  height: auto   !important;
+  
+	}
+	
+	
 	.faculty {
 	border-radius: 0.5rem;
 	}
@@ -54,7 +63,7 @@
   top: 20px;
   font-size: 2.75em;
   color: #ffffff;
-  opacity:1;
+  opacity:0;
   z-index: 899;
   transition: all 0.2s ease;
 }
@@ -63,7 +72,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba( 51,51, 51,0.8);
+  background-color: rgba( 51,51,51,0.8);
   z-index: 799;
   display:none;
   opacity:1;
@@ -99,21 +108,24 @@
   font-size: 2em;
   padding-bottom: 50%;
 }
-link style*/
+
 
 a:link {
-  color: #3ABFC4;/*teal*/
+  color: #ffffff;/*teal*/
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 a:visited {
-  color: #3ABFC4;/*teal*/
+  color: #ffffff;/*teal*/
+  text-decoration: none;
 }
 
 a:hover {
-  color: #fafaf9;/*pale yello*/
+  color: #ffffff;/*pale yello*/
   font-size: 1.05em;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .disBtn{

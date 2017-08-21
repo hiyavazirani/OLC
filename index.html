@@ -67,7 +67,6 @@ $(".menu-panel").css("display","none");
 
 
 <body>
-<!--https://codepen.io/dueytam/pen/rOgPzj-->
   <section>
     <div class="menu-btn">
       <span class="lnr lnr-menu"></span>
@@ -90,6 +89,7 @@ $(function() {
      $(".menu-btn").click(function() {
      		$(".menu-panel").show();
      		$(".menu-btn").hide();
+     		$(".cross-btn").css("opacity","1");
      		$(".cross-btn").show();    
         });
 		
@@ -149,9 +149,26 @@ $(function() {
 
 
 
-
+<!--
 <iframe width="420" height="345" src="http://www.youtube.com/embed/XGSy3_Czz8k?controls=0">
 </iframe>
+-->
+<section>
+									
+										<div class="content">
+
+								<div class="box">
+								<video width="640" height="360" controls>
+<source src="images/sample.mp4" type="video/mp4">
+</video>
+
+
+										</div>
+									</section>
+
+
+
+
 
 </section>
 					
@@ -219,79 +236,7 @@ $(function() {
 					</section>
 					
 					
-			<!-- Quotes -->
-				
-
-				<!-- Three -->
-					<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Jill Vialet</h2> 
-							<h3>CEO, Playworks</h3>
-							<blockquote> The people that were at the camp were great.
-							 It was particularly engaging because we came
-							  from such a range and diversity of backgrounds.
-							   I think I often find myself in rooms with other people looking at 
-							   education and there were education folks but also a wide range of 
-							   interests, approaches, and diversity of thought and of backgrounds:
-							    libraries, cities, a PBS station. 
-							    [That]  helped me think about how to apply this idea about open 
-							    and it really changed how we are going to do some stuff around here."
-							    </blockquote>
-							    
-							<!--<ul class="actions vertical">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul> -->
-						</div>
-						<div class="image">
-							<img src="images/jill-vialet.jpg" alt="" />
-						</div>
-					</section>
-
-
-<!-- Four -->
-					<section class="spotlight style2 orient-left content-align-left image-position-center onscroll-image-fade-in" >
-						<div class="content">
-							<h2> Brian Bannon</h2> 
-							 <h3>Commissioner, Chicago Public Library</h3>
-							<blockquote>Chicago Public Library is one of the largest urban public 
-							libraries in the United States. Our mission has remained unchanged -- 
-							showing and connecting people to the world's ideas and knowledge to create 
-							a strong and vibrant Chicago -- but the way that we do it today in the information
-							 age needs to look much different from what we did it 10, 20, 50, or 100 years ago.
-							  The opportunity for us was really to use the open leadership camp to work on
-							   an open project to unpack how the library can look different today. </blockquote>
-						
-							<!--<ul class="actions vertical">
-								<li><a href="#" class="button">Learn More</a></li> 
-							</ul> -->
-						</div>
-						<div class="image">
-							<img src="images/brian-bannon.jpg" alt="" />
-						</div>
-					</section>
-
-<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in" >
-						<div class="content">
-							<h2>Margaret Honey</h2> 
-							<h3>President, NY Hall of Science</h3>
-							<blockquote>For me, it was just a moment that had a real 
-							staying power and an important affirmation because 
-							it's easy to lose sight of core values, core purpose, 
-							in a kind of daily-ness of our work. Effective leadership 
-							is anchored in the values that are often most personal and 
-							most intimate to us. All of us who lead organizations, of course,
-							 are caught up in daily grind of what we do. 
-							 There is often not enough time [...] to step back and reflect.
-							 <br> 
-							 </blockquote>
-							
-					
-						</div>
-						<div class="image">
-							<img src="images/margaret-honey.jpg" alt="" />
-						</div>
-					</section>
-
+			
 			
 			<!-- CURRICULUM-->
 					<section id="curriculum" class="wrapper style2 align-center section s3">
@@ -471,8 +416,84 @@ Foundation</p>
 						</div>
 					</section>
 					
+					<!-- Quotes -->
+				
+
+				<!-- Three -->
+					<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Jill Vialet</h2> 
+							<h3>CEO, Playworks</h3>
+							<blockquote> The people that were at the camp were great.
+							 It was particularly engaging because we came
+							  from such a range and diversity of backgrounds.
+							   I think I often find myself in rooms with other people looking at 
+							   education and there were education folks but also a wide range of 
+							   interests, approaches, and diversity of thought and of backgrounds:
+							    libraries, cities, a PBS station. 
+							    [That]  helped me think about how to apply this idea about open 
+							    and it really changed how we are going to do some stuff around here."
+							    </blockquote>
+							    
+							<!--<ul class="actions vertical">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul> -->
+						</div>
+						<div class="image">
+							<img src="images/jill-vialet.jpg" alt="" />
+						</div>
+					</section>
+
+
+<!-- Four -->
+					<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in" >
+						<div class="content">
+							<h2> Brian Bannon</h2> 
+							 <h3>Commissioner, Chicago Public Library</h3>
+							<blockquote>Chicago Public Library is one of the largest urban public 
+							libraries in the United States. Our mission has remained unchanged -- 
+							showing and connecting people to the world's ideas and knowledge to create 
+							a strong and vibrant Chicago -- but the way that we do it today in the information
+							 age needs to look much different from what we did it 10, 20, 50, or 100 years ago.
+							  The opportunity for us was really to use the open leadership camp to work on
+							   an open project to unpack how the library can look different today. </blockquote>
+						
+							<!--<ul class="actions vertical">
+								<li><a href="#" class="button">Learn More</a></li> 
+							</ul> -->
+						</div>
+						<div class="image">
+							<img src="images/brian-bannon.jpg" alt="" />
+						</div>
+					</section>
+
+<section class="spotlight style2 orient-right content-align-center image-position-left onscroll-image-fade-in" >
+						<div class="content">
+							<h2>Margaret Honey</h2> 
+							<h3>President, NY Hall of Science</h3>
+							<blockquote>For me, it was just a moment that had a real 
+							staying power and an important affirmation because 
+							it's easy to lose sight of core values, core purpose, 
+							in a kind of daily-ness of our work. Effective leadership 
+							is anchored in the values that are often most personal and 
+							most intimate to us. All of us who lead organizations, of course,
+							 are caught up in daily grind of what we do. 
+							 There is often not enough time [...] to step back and reflect.
+							 <br> 
+							 </blockquote>
+							
+					
+						</div>
+						<div class="image">
+							<img src="images/margaret-honey.jpg" alt="" />
+						</div>
+					</section>
+
+					
+				
+					
 					<!-- Five -->
-					<section class="wrapper style2 align-center">
+					<section id="cohorts" class="wrapper style2 align-center">
 						<div class="inner">
 							<h1>Cohorts</h1>
 							<p> For our first cohort we asked people whose opinions 
@@ -747,7 +768,7 @@ Foundation</p>
 					<section class="wrapper style1 align-center">
 						<div class="inner">
 							<h2>Library Books</h2>
-							<p>For the first camp. we asked all the participants to bring a
+							<p>For the first camp, we asked all the participants to bring a
 							 book of their choice about open source. Here are some of them.</p>
 						</div>
 
@@ -767,8 +788,8 @@ Foundation</p>
 										<img src="images/books/cathedral.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>cathedral</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>The Cathedral & the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary</h3>
+										<p>Author: Eric S. Raymond</p>
 										<ul class="actions">
 											<li><span class="button small">Details</span></li>
 										</ul>
@@ -780,8 +801,8 @@ Foundation</p>
 										<img src="images/books/hacker.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>The Hacker Ethic: A Radical Approach to the Philosophy of Business</h3>
+										<p>Pekka Himanen</p>
 										<ul class="actions">
 											<li><span class="button small">Details</span></li>
 										</ul>
@@ -793,8 +814,8 @@ Foundation</p>
 										<img src="images/books/success.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Ultrices Magna</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>The Success of Open Source</h3>
+										<p>Author: Steven Weber</p>
 										<ul class="actions">
 											<li><span class="button small">Details</span></li>
 										</ul>
@@ -806,8 +827,9 @@ Foundation</p>
 										<img src="images/books/wealth.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>The Wealth of Networks: How Social Production Transforms Markets and Freedom</h3>
+										<p>Author: Yochai Benkler</p>
+										<p>Recommendor:Mark Surman</p>
 										<ul class="actions">
 											<li><span class="button small">Details</span></li>
 										</ul>
@@ -819,34 +841,36 @@ Foundation</p>
 										<img src="images/books/reinventing.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Ipsum Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>Reinventing Organizations</h3>
+										<p>Author: Frederic Laloux, Ken Wilber</p>
+										
 										<ul class="actions">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
-								
+						<!--		
 								<article>
 									<a href="images/books/ethic.jpg" class="image">
 										<img src="images/books/ethic.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Magna Risus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>The Hacker Ethic: A Radical Approach to the Philosophy of Business</h3>
+										<p>Author: Pekka Himanen</p>
 										<ul class="actions">
 											<li><span class="button small">Details</span></li>
 										</ul>
 									</div>
 								</article>
-								
+							-->	
 								<article>
 									<a href="images/books/power.jpg" class="image">
 										<img src="images/books/power.jpg" alt="" />
 									</a>
 									<div class="caption">
-										<h3>Tempus Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+										<h3>The Power of Pull: How Small Moves, Smartly Made, Can Set Big Things in Motion</h3>
+										<p>Author: John Hagel III, John Seely Brown, Lang Davison </p>
+										<p>Recommended by: Joi Ito</p>
 										<ul class="actions">
 											<li><span class="button small">Details</span></li>
 										</ul>
@@ -856,14 +880,15 @@ Foundation</p>
 								
 					</section>
 					
-			<section class="wrapper style2 align-center">
+			<section id="nominate" class="wrapper style2 align-center">
 						<div class="inner">
 							<h2>What's next?</h2>
 							<p>Our inaugural camp showed that there was strong interest from the kinds of 
 							leaders we’re hoping to reach, and that they took away something useful from 
 							this kind of shared learning experience. We also had a lot of fun organizing and running it.
 							 That’s why we’ve decided to organize a second Open Leadership Camp at the 
-							 Media Lab in the fall this year and are tentatively planning a third camp for spring 2018.</p>
+							 Media Lab in the fall this year and are tentatively planning a third camp for spring 2018.If you wish to 
+							 nominate someone, you can do so in the form below.</p>
 						</div>
 
 			
@@ -873,7 +898,7 @@ Foundation</p>
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Nominate</h2>
-							<form method="post" action="#">
+							<form method="post" action=""mailto:hiyavazirani@gmail.com"">
 								<div class="field half first">
 									<label for="name">Name</label>
 									<input type="text" name="name" id="name" value="" />

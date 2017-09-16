@@ -18,7 +18,12 @@
 		vertical-align: baseline;
 	}
 	
+	.mozilla {
+	padding-top: 44px;
+	padding-bottom:40px;
+	padding-right:40px;
 	
+	}
 	
 	video {
 	 width: 100%    !important;
